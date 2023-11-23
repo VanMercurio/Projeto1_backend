@@ -25,38 +25,43 @@
 
                 <div class="content">
                     <h2>Cadastre-se</h2> <!--Início do formulário-->
-                    <form action="/action_page.php" method="POST" id="form"> <!--Para lincar o BD-->
+                    <form action="action_page.php" method="POST" id="form"> <!--Para lincar o BD-->
                         <div>
-                            <input type="text" id="name" placeholder="Digite seu nome completo" class="inputs required">
+                            <input type="text" name='nome' id="nome" placeholder="Digite seu nome completo"
+                                class="inputs required">
                             <!--Nome-->
                         </div>
                         <div>
-                            <input type="text" id="adress" placeholder="Digite seu endereço" class="inputs required">
+                            <input type="text" name='endereco' id="endereco" placeholder="Digite seu endereço"
+                                class="inputs required">
                             <!--endereço-->
                         </div>
                         <div>
-                            <input type="text" id="city" placeholder="Digite sua cidade" class="inputs required">
+                            <input type="text" name='cidade' id="cidade" placeholder="Digite sua cidade"
+                                class="inputs required">
                             <!--cidade-->
 
                         </div>
                         <div>
                             <label for="nasc">Data de nascimento</label><!--data de nascimento-->
-                            <input type="date" id="nasc" class="inputs required">
+                            <input type="date" name='data_nascimento' id="data_nascimento" class="inputs required">
 
                         </div>
                         <div>
-                            <input type="email" id="email" placeholder="Digite seu melhor e mail"
+                            <input type="email" name='email' id="email" placeholder="Digite seu melhor e mail"
                                 class="inputs required"> <!--email-->
 
                         </div>
 
                         <div>
-                            <input type="text" id="pontoref" placeholder="Digite um ponto de referência"
-                                class="inputs required"> <!--ponto de referência-->
+                            <input type="text" name='ponto_referencia' id="ponto_referencia"
+                                placeholder="Digite um ponto de referência" class="inputs required">
+                            <!--ponto de referência-->
 
                         </div>
                         <div>
-                            <input type="password" id="password" placeholder="Digite uma senha" class="inputs required">
+                            <input type="password" name='senha' id="senha" placeholder="Digite uma senha"
+                                class="inputs required">
                             <!--senha-->
 
                         </div>
@@ -64,33 +69,33 @@
                         <p>Sexo:</p>
                         <div class="box-select" id="sexo">
                             <div>
-                                <input type="radio" name="sexo" id="m">
-                                <label for="m">Masculino</label>
+                                <input type="radio" name="sexo" id="sexo" value="m">
+                                <label>Masculino</label>
                             </div>
                             <div>
-                                <input type="radio" name="sexo" id="f">
-                                <label for="f">Feminino</label>
+                                <input type="radio" name="sexo" id="sexo" value="f">
+                                <label>Feminino</label>
                             </div>
                             <div>
-                                <input type="radio" name="sexo" id="o">
-                                <label for="o">Outro</label>
+                                <input type="radio" name="sexo" id="sexo" value="o">
+                                <label>Outro</label>
                             </div>
                         </div>
 
                         <p>Qual a sua classificação ?</p>
-                        <div class="box-select" id="adicionais">
+                        <div class="box-select" id="classificacao">
                             <div>
-                                <input type="checkbox" name="adicionais" id="adicionais">
-                                <label for="adicionais">Carona</label>
+                                <input type="checkbox" name='classificacao' id="classificacao" value="carona">
+                                <label for="classificacao">Carona</label>
                             </div>
                             <div>
-                                <input type="checkbox" name="adicionais" id="adicionais">
-                                <label for="adicionais">Motorista</label>
+                                <input type="checkbox" name='classificacao' id="classificacao" value="motorista">
+                                <label for="classificacao">Motorista</label>
                             </div>
                         </div>
-
+                        <button type="submit" class="enviar">Enviar</button>
                     </form>
-                    <button type="submit" class="enviar">Enviar</button>
+
                 </div>
 
                 <p class="termos"><input type="checkbox" id="aceitar" name="aceitar"> Para continuar, leia e aceite
