@@ -1,0 +1,53 @@
+:root {
+    --color-white: #ffffff;
+    --color-red: #e63636;
+    --color-dark1: #181818;
+    --color-dark2: #1e1e1e;
+    --color-orange1: #f1af80;
+    --color-orange2: #f7934b;
+    --color-orange3: #f9e0ce;
+    --color-blue: #1d054e;
+}
+
+.BláBlaluno {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color-blue);
+    text-align: center;
+    font-size: 2rem;
+    align-items: center;
+
+}
+
+.descricao {
+    color: var(--color-blue);
+    text-align: center;
+    font-size: 1rem;
+}
+
+.imagem1 {
+    
+    max-width: 90%;
+    margin: auto;
+    display: block;
+    
+
+}
+
+button[type="submit"] {
+    padding: 1rem;
+    font-size: 1rem;   
+    border: none;
+    border-radius: 5px;
+    color: var(--color-blue);
+    background-color: var(--color-orange2);
+    cursor: pointer;
+}
+
+.ava {
+    text-align: left;
+    
+}
+
+button[type="submit"]:hover {
+    background-color: var(--color-orange3);
+}
