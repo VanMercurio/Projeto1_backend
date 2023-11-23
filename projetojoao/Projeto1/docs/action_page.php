@@ -1,7 +1,7 @@
 <?php
 
 // Conectar ao banco de dados (substitua com suas credenciais)
-$host = "localhost/projetojoao/Projeto1/docs/";
+$host = "localhost/projetojoao\<Projeto1>docs";
 $usuario = "root";
 $senha = "383458";
 $banco = "usuarios";
@@ -14,15 +14,15 @@ if ($conexao->connect_error) {
 }
 
 // Coleta os dados do formulário
-$nome = $_GET['name'];
-$endereco = $_GET['adress'];
-$cidade = $_GET['city'];
-$data_nascimento = $$_GET['nasc'];
-$email = $_GET['email'];
-$ponto_referencia = $_GET['pontoref'];
-$senha = $_GET['password'];
-$sexo = $_GET['sexo'];
-$classificacao = implode('motorista, carona', $_GET['adicionais']); // adicionais selecionados carona e motorista
+$nome = $_POST['name'];
+$endereco = $_POST['adress'];
+$cidade = $_POST['city'];
+$data_nascimento = $_POST['nasc'];
+$email = $_POST['email'];
+$ponto_referencia = $_POST['pontoref'];
+$senha = $_POST['password'];
+$sexo = $_POST['sexo'];
+$classificacao = implode('motorista, carona', $_POST['adicionais']); // adicionais selecionados carona e motorista
 
 // Preparar a consulta SQL para inserir dados
 $inserirDados = $conexao->prepare(" INSERT INTO usuarios (id, nome, endereco, cidade, data_nascimento, email, ponto_referencia, senha, sexo, classificacao) VALUES (?, ?)");
