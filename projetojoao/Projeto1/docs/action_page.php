@@ -1,3 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="login.js">
+    <title>Blablaluno Login</title>
+</head>
+
+<body>
+    <main class="container">
+        <!--Classificação para responsividade-->
+        <div class="row">
+            <br>
+            <div class="col-md-4">
+
+                <h1>BláBlaluno
+                    <!--Cabeçalho-->
+                    <img src="https://static.thenounproject.com/png/293801-200.png" height="30px" alt="Carro de carona">
+                    <a href="index.html" class="Home">
+                        <button type="submit" class="home">Home</button></a>
+                </h1>
+                <h3 class="subtitulo">Bwm Vindo ! </h3>
+            </div>
+</body>
+
+</html>
+
 <?php
 
 // Conectar ao banco de dados (substitua com suas credenciais)
@@ -32,7 +63,7 @@ $inserirDados->bind_param("sssssssss", $nome, $endereco, $cidade, $data_nascimen
 
 // Executar a consulta
 if ($inserirDados->execute()) {
-    echo "Dados inseridos com sucesso!\n\n";
+    echo "Dados inseridos com sucesso!";
 } else {
     echo "Erro ao inserir dados: " . $conexao->error;
 }
@@ -40,3 +71,4 @@ if ($inserirDados->execute()) {
 // Fechar a conexão e liberar recursos
 $inserirDados->close();
 $conexao->close();
+?>
