@@ -25,43 +25,45 @@
 
                 <div class="content">
                     <h2>Cadastre-se</h2> <!--Início do formulário-->
-                    <form action="action_page.php" method="POST" id="form"> <!--Para lincar o BD-->
+                    <form action="action_page.php" method="POST" id="form">
+                        <!--Para lincar o BD-->
                         <div>
                             <input type="text" name='nome' id="nome" placeholder="Digite seu nome completo"
-                                class="inputs required">
+                                class="inputs required" required>
                             <!--Nome-->
                         </div>
                         <div>
                             <input type="text" name='endereco' id="endereco" placeholder="Digite seu endereço"
-                                class="inputs required">
+                                class="inputs required" required>
                             <!--endereço-->
                         </div>
                         <div>
                             <input type="text" name='cidade' id="cidade" placeholder="Digite sua cidade"
-                                class="inputs required">
+                                class="inputs required" required>
                             <!--cidade-->
 
                         </div>
                         <div>
                             <label for="nasc">Data de nascimento</label><!--data de nascimento-->
-                            <input type="date" name='data_nascimento' id="data_nascimento" class="inputs required">
+                            <input type="date" name='data_nascimento' id="data_nascimento" class="inputs required"
+                                required>
 
                         </div>
                         <div>
                             <input type="email" name='email' id="email" placeholder="Digite seu melhor e mail"
-                                class="inputs required"> <!--email-->
+                                class="inputs required" required> <!--email-->
 
                         </div>
 
                         <div>
                             <input type="text" name='ponto_referencia' id="ponto_referencia"
-                                placeholder="Digite um ponto de referência" class="inputs required">
+                                placeholder="Digite um ponto de referência" class="inputs required" required>
                             <!--ponto de referência-->
 
                         </div>
                         <div>
-                            <input type="password" name='senha' id="senha" placeholder="Digite uma senha"
-                                class="inputs required">
+                            <input type="password" name='senha' id="senha" minlength="6" maxlength="6"
+                                placeholder="Digite uma senha" class="inputs required" required>
                             <!--senha-->
 
                         </div>
@@ -69,15 +71,15 @@
                         <p>Sexo:</p>
                         <div class="box-select" id="sexo">
                             <div>
-                                <input type="radio" name="sexo" id="sexo" value="m">
+                                <input type="radio" name="sexo" id="sexo" value="masculino">
                                 <label>Masculino</label>
                             </div>
                             <div>
-                                <input type="radio" name="sexo" id="sexo" value="f">
+                                <input type="radio" name="sexo" id="sexo" value="feminino">
                                 <label>Feminino</label>
                             </div>
                             <div>
-                                <input type="radio" name="sexo" id="sexo" value="o">
+                                <input type="radio" name="sexo" id="sexo" value="outros">
                                 <label>Outro</label>
                             </div>
                         </div>
