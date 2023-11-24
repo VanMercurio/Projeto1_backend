@@ -47,19 +47,20 @@ if (isset($_GET['delete'])) {
     echo "<b>Deletado com sucesso o id : </b>" . $id . "<br><br>";
 }
 
-?>
-
-<?php
 if (isset($_POST['nome'])) {
     $sql = $conexao->prepare("INSERT INTO usuarios VALUES (null,?,?,?,?,?,?,?,?,?)");
     $sql->bind_param("sssssssss", $_POST['nome'], $_POST['endereco'], $_POST['cidade'], $_POST['data_nascimento'], $_POST['email'], $_POST['ponto_referencia'], $_POST['senha'], $_POST['sexo'], $_POST['classificacao']);
     $sql->execute();
     echo "Inserido com sucesso!";
 }
+// Fechar a conexão e liberar recursos
+
+
 ?>
 <!-- cod HTML para inserção de campos para incluir dados -->
 <p>***************************************************************************************</p>
 <p><strong>Incluir dados</strong></p>
+
 <form method="post">
 
     <label for=nome>Nome</label>

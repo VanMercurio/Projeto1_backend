@@ -23,7 +23,7 @@
                     <a href="index.html" class="Home">
                         <button type="submit" class="home">Home</button></a>
                 </h1>
-                <h3 class="subtitulo">Bwm Vindo ! </h3>
+                <h3 class="subtitulo">Bem Vindo ! </h3>
             </div>
 </body>
 
